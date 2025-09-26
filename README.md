@@ -38,4 +38,3 @@ Environment variables are important in a cloud environment to support microservi
 
 - I learned an important lesson to not constantly reboot the App Services whenever I make changes; it is not required, and I hit the 'Quota Exceeded' status on the Free F1 tier as a result.
 - Worst case if I am dealing with persistent errors, deleting the lab resource group and restarting is not a bad idea; sometimes Azure is just funky.
-- 
