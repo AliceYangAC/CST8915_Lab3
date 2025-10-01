@@ -8,7 +8,7 @@
 
 1. **What challenges did you encounter when configuring environment variables in the GitHub Actions workflow?**
 
-As we had discussed in class, unlike `order-service` and `product-service,` the static frontend `store-front` application compiles into static HTML, CSS, and JavaScript files that are served to the browser on deployment. Since it is a serverless application that runs in the user's browser, it cannot dynamically read environment variables at runtime. Therefore, the environment variables must be defined in the GitHub Actions workflow file so the frontend app bakes the environment variables during build, and is able to know how to reach the backend services.
+As we had discussed in class, unlike `order-service` and `product-service,` the static frontend `store-front` application compiles into static HTML, CSS, and JavaScript files that are served to the browser on deployment. Since it is a serverless application that runs in the user's browser, it cannot dynamically read environment variables at runtime. I initially assumed that it would require environment variables configured in the App Settings just like the two backend services, but understand now that the serverless app would have no way of reading those variables. Therefore, the environment variables must be defined in the GitHub Actions workflow file so the frontend app bakes the environment variables during build, and is able to know how to reach the backend services.
 
 2. **How does deploying microservices on Azure Web App Service differ from running them locally?**
 
